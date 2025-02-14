@@ -1,2 +1,2 @@
 # mon-premier-site-web
-Voici le premier site web que j'ai réalisé durant une immersion à la holberton school : (https://apply.holbertonschool.com/level2/school.css)
+Voici le premier site web que j'ai réalisé durant une immersion à la holberton school : ()
