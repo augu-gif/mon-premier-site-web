@@ -5,10 +5,10 @@ Durant mon immerion de 3 jours a la hoberton school, j'ai eu l'opportunité d’
 [Visiter le site](https://augu-gif.github.io/mon-premier-site-web)
 
 ## Compétences
-#HTML / CSS: Création de pages web structurées et stylisées.
+# HTML / CSS: Création de pages web structurées et stylisées.
 Introduction a JavaScript: Ajout d'interactivité sur ton site web.
 
-#Utilisation de l’environnement Linux
+# Utilisation de l’environnement Linux
 Commandes de base dans le terminal : Navigation dans les fichiers, gestion des répertoires, exécution de scripts.
 Utilisation de sudo : Exécution de commandes avec des privilèges administrateurs.
 
