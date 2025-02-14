@@ -1,6 +1,5 @@
 # Mon premier site web
 
-Voici le premier site web que j'ai réalisé durant une immersion à la holberton school
 
 ## Accéder au site
 [Visiter le site](https://augu-gif.github.io/mon-premier-site-web)
