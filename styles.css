@@ -173,7 +173,7 @@ footer a:hover {
     }
 
     footer p {
-        font-size: 0.9rem; /* Réduire la taille du texte pour les petits écrans */
+        font-size: 0.9rem; 
     }
 }
 
@@ -195,6 +195,6 @@ footer a:hover {
     }
 
     footer p {
-        font-size: 0.8rem; /* Réduire encore la taille du texte pour les très petits écrans */
+        font-size: 0.8rem;
     }
 }
