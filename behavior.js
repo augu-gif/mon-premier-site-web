@@ -21,3 +21,18 @@ var disqus_config = function () {
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
+function showResult() {
+        const q1 = document.querySelector('input[name="q1"]:checked').value;
+        const q2 = document.querySelector('input[name="q2"]:checked').value;
+        let result = "";
+
+        if (q1 === "rock" && q2 === "100") {
+            result = "Nous vous recommandons une guitare électrique d'entrée de gamme.";
+        } else if (q1 === "classique" && q2 === "300") {
+            result = "Une guitare classique de milieu de gamme serait parfaite pour vous.";
+        } else {
+            result = "Une guitare acoustique polyvalente serait un bon choix.";
+        }
+
+        document.getElementById("result").innerText = result;
+    }
