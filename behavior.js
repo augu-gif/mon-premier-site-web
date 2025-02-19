@@ -1,38 +1,43 @@
-document.addEventListener("DOMContentLoaded", function(event) {
 
-});
-var thumbnailElement = document.getElementById("smart_thumbnail");
-thumbnailElement.addEventListener("click", function() {
-  alert("I saw you click!")
-});
-var thumbnailElement = document.getElementById("smart_thumbnail");
-thumbnailElement.className;""
-if (thumbnailElement.className == "") {
-	// write here the code that will execute if the image is big
-}
-var disqus_config = function () {
-                    this.page.url = 'https://votre-site.com'; // URL de votre page
-                    this.page.identifier = 'guitare-express'; // Identifiant unique de votre page
-                };
+const toggleDarkMode = () => {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+};
 
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://votre-disqus-shortname.disqus.com/embed.js'; // Remplacez par votre shortname
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-function showResult() {
-        const q1 = document.querySelector('input[name="q1"]:checked').value;
-        const q2 = document.querySelector('input[name="q2"]:checked').value;
-        let result = "";
 
-        if (q1 === "rock" && q2 === "100") {
-            result = "Nous vous recommandons une guitare électrique d'entrée de gamme.";
-        } else if (q1 === "classique" && q2 === "300") {
-            result = "Une guitare classique de milieu de gamme serait parfaite pour vous.";
-        } else {
-            result = "Une guitare acoustique polyvalente serait un bon choix.";
-        }
-
-        document.getElementById("result").innerText = result;
+window.onload = () => {
+    if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark-mode");
     }
+
+    // Affichage d'un message de bienvenue dynamique
+    const welcomeMessage = document.createElement("div");
+    welcomeMessage.innerHTML = `<p>🎶 Bienvenue sur Guitare Express ! Prêt à apprendre ? 🎸</p>`;
+    welcomeMessage.style.cssText = "background: #f39c12; color: white; padding: 10px; text-align: center;";
+    document.body.prepend(welcomeMessage);
+};
+
+
+document.querySelectorAll("img.small").forEach(img => {
+    img.addEventListener("mouseover", () => {
+        img.style.transform = "scale(1.2)";
+        img.style.transition = "0.3s";
+    });
+    img.addEventListener("mouseout", () => {
+        img.style.transform = "scale(1)";
+    });
+});
+
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    const topButton = document.createElement("button");
+    topButton.innerText = "🔝";
+    topButton.style.cssText = "position:fixed;bottom:20px;right:20px;padding:10px;border-radius:50%;background:#222;color:white;border:none;cursor:pointer;font-size:20px;";
+    
+    topButton.onclick = scrollToTop;
+    document.body.appendChild(topButton);
+});
